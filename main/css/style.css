@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #7159c2;
+}
+header{
+    background:yellow;
+    grid-area: h;
+    /*
+    DETERMINAR QUANDO COMEÇAR E TERMINAR NAS LINHAS E NAS COLUNAS ESPECIFICADAS NO CONTAINER
+     grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4 */
+}
+
+main{
+    background: blue;
+    grid-area: m;
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+
+}
+
+aside{
+    background: green;
+    /* grid-column-start: 2;
+    grid-column-end: 3; */
+    grid-area: a;
+
+}
+
+footer{
+    background: red;
+    grid-area:f;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+}
+
+.container{
+    /* PROPRIEDAS BÁSICAS DO CONTAINER PARA INICIAR GRID */
+    
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas:"h   h"
+                        "m   a"
+                        "f   f";
+
+    /* PARA APLICAR ESPAÇOS VAZIOS UTILIZE O .
+
+        grid-template-areas:"h   ."
+                           "m   a"
+                           ".   f"; */
+    
+    /*
+    DETERMINAR "MARGEM" ENTRE OS ELEMENTOS
+
+    grid-column-gap: 20px; grid-row-gap: 20px; */
+    /* grid-gap: 20px; */
+    
+}
