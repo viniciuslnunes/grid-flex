@@ -16,8 +16,29 @@ html, body {
     grid-template-rows: 1fr 1fr 1fr;
 
     grid-gap: 5px;
+
+    /* DETERMINA A POSIÇÃO DO "CONTEÚDO" DENTRO DE UM CONTAINER */
+
+    justify-content: space-between;
+    align-content: space-between;
+
+    /* PARA REALIZAR O ALINHAMENTO DOS ITENS, 
+    APÓS DIMINUIR AS DIMENSÕES DA DIV ALINHE-OS NO CONTAINER */
+    
+    justify-items: flex-end;
+    align-items: flex-start;
+    
 }
 
 .container > div {
     background:#7159c1;
+
+    /* PASSO INICIAL PARA DETERMINAR O "ALINHAMENTO" DOS ITENS É DIMINUÍLOS DENTRO DO CONTAINER*/
+    width:50%;
+    height: 50%;
+
+    justify-items: center;
+    align-items: center;
+
+    
 }
