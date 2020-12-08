@@ -40,5 +40,8 @@ html, body {
     justify-items: center;
     align-items: center;
 
+    /* SELF É O ALINHAMENTO DO PRÓPRIO ITEM SEM TER QUE TRABALHAR EM TODO O CONTAINER */
+
+    
     
 }
